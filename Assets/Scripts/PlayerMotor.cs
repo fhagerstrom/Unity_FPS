@@ -62,7 +62,7 @@ public class PlayerMotor : MonoBehaviour
         }
 
         controller.Move(playerVelocity * Time.deltaTime); // Check if the gravity works as intended.
-        Debug.Log(playerVelocity.y);
+        // Debug.Log(playerVelocity.y);
     }
 
     public void Jump()
