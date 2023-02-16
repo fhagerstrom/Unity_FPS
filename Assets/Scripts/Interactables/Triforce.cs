@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Triforce : Interactable
 {
+    // Temporary door opener
+    [SerializeField]
+    private GameObject door;
+    private bool doorOpen;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +25,9 @@ public class Triforce : Interactable
     // Design interactable behaviour here.
     protected override void Interact()
     {
-        Debug.Log("Interacted with " + gameObject.name);
+        doorOpen = !doorOpen;
+        door.GetComponent<Animator>().SetBool("Opened", doorOpen);
+
+        // Debug.Log("Interacted with " + gameObject.name);
     }
 }

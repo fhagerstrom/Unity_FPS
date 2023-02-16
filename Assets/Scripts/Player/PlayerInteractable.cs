@@ -6,7 +6,7 @@ public class PlayerInteractable : MonoBehaviour
 {
     private Camera cam;
     [SerializeField]
-    private float distance = 3.0f;
+    public float distance = 3.0f;
 
     [SerializeField]
     private LayerMask mask;
@@ -35,7 +35,13 @@ public class PlayerInteractable : MonoBehaviour
         {
             if (hitInfo.collider.GetComponent<Interactable>() != null)
             {
-                playerUI.UpdateText(hitInfo.collider.GetComponent<Interactable>().promptMessage);
+                Interactable interactable = hitInfo.collider.GetComponent<Interactable>();
+                playerUI.UpdateText(interactable.promptMessage);
+
+                if (inputManager.onFootActions.Interact.triggered)
+                {
+                    interactable.BaseInteract();
+                }
             }
         }
     }

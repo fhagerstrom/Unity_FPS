@@ -421,7 +421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88aac306d23ccaf4388c9c079572abd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptMessage: Power, Wisdom, Courage
+  promptMessage: Get out there and have fun!
+  door: {fileID: 1865841984}
 --- !u!64 &602168095
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -554,8 +555,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookCam: {fileID: 149669889}
-  xSensitivity: 25
-  ySensitivity: 25
+  xSensitivity: 40
+  ySensitivity: 40
 --- !u!114 &686547858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1127,6 +1128,42 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1865841984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
+  m_PrefabInstance: {fileID: 458034475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1865841990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865841984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4cc54fbf58c164183302dee1507715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: 
+--- !u!1 &2003065968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
+  m_PrefabInstance: {fileID: 365521968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2003065974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003065968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4cc54fbf58c164183302dee1507715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: 
 --- !u!1001 &2124297119
 PrefabInstance:
   m_ObjectHideFlags: 0
