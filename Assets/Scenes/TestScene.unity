@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcab78622ba1ea94ba57953e4bd33b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useEvents: 0
   promptMessage: Its-a-me!
 --- !u!64 &135792032
 MeshCollider:
@@ -421,6 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88aac306d23ccaf4388c9c079572abd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useEvents: 0
   promptMessage: Get out there and have fun!
   door: {fileID: 1865841984}
 --- !u!64 &602168095
@@ -1145,7 +1147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4cc54fbf58c164183302dee1507715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptMessage: 
 --- !u!1 &2003065968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
@@ -1163,7 +1164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4cc54fbf58c164183302dee1507715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptMessage: 
 --- !u!1001 &2124297119
 PrefabInstance:
   m_ObjectHideFlags: 0
